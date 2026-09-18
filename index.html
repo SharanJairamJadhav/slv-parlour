@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLV Wings Unisex Salon | Enhance Your Natural Grace | Luxury Beauty & Spa</title>
+  <!-- <meta name="description"
+    content="Discover personalized hair styling, luxury facials, HD bridal makeup, nail art, and holistic spa wellness at SLV Wings Unisex Salon, Singanayakanahalli, Yelahanka, Bengaluru.">
+  <meta name="keywords"
+    content="unisex salon bengaluru, luxury beauty parlour yelahanka, bridal makeup artist, hair spa, keratin treatment, facial, manicure, pedicure, SLV Wings">
+  <meta name="author" content="SLV Wings Unisex Salon"> -->
+
+  <!-- Open Graph Meta Tags -->
+  <!-- <meta property="og:title" content="SLV Wings Unisex Salon | Enhance Your Natural Grace">
+  <meta property="og:description"
+    content="Where beauty, wellness, and personalized care come together in a serene luxury sanctuary.">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80"> -->
+
+  <!-- Favicon Fallback Icon SVG -->
+  <!-- <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕊️</text></svg>"> -->
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Luxury Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Top Announcement & Trust Bar -->
+  <!-- <aside class="announcement-bar" aria-label="Special Offers">
+    <span>✨ Complimentary Luxury Hair & Skin Consultation with Every Signature Package</span>
+    <span>•</span>
+    <span>Call for Priority Appointments: <a href="tel:+919731121678">+91 9731121678</a></span>
+  </aside> -->
+
+  <!-- Global Sticky Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo & Brand Identity -->
+        <a href="#home" class="brand-logo" onclick="navigateTo('home'); return false;"
+          aria-label="SLV Wings Unisex Salon Home">
+          <div class="brand-crest" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8 6 3 9 2 14c-1 5 3 7 7 5 3-1.5 3-5 3-5s0 3.5 3 5c4 2 8 0 7-5-1-5-6-8-10-12z" />
+            </svg>
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">SLV Wings</span>
+            <span class="brand-tagline">Unisex Salon & Spa</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" aria-label="Main Navigation">
+          <a href="#home" class="nav-link active" data-page="home" onclick="navigateTo('home'); return false;">Home</a>
+          <a href="#about" class="nav-link" data-page="about" onclick="navigateTo('about'); return false;">About</a>
+          <a href="#services" class="nav-link" data-page="services"
+            onclick="navigateTo('services'); return false;">Services</a>
+          <a href="#pricing" class="nav-link" data-page="pricing"
+            onclick="navigateTo('pricing'); return false;">Pricing</a>
+          <a href="#team" class="nav-link" data-page="team" onclick="navigateTo('team'); return false;">Team</a>
+          <a href="#gallery" class="nav-link" data-page="gallery"
+            onclick="navigateTo('gallery'); return false;">Gallery</a>
+          <a href="#testimonials" class="nav-link" data-page="testimonials"
+            onclick="navigateTo('testimonials'); return false;">Reviews</a>
+          <a href="#contact" class="nav-link" data-page="contact"
+            onclick="navigateTo('contact'); return false;">Contact</a>
+        </nav>
+
+        <!-- CTA & Mobile Trigger -->
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <button class="btn btn-primary btn-sm" onclick="openBookingModal()" style="display: none;" id="headerBookBtn">
+            Book Appointment
+          </button>
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="toggleMobileMenu(false)"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <span class="brand-title" style="font-size: 1.3rem;">SLV WINGS</span>
+        <button onclick="toggleMobileMenu(false)"
+          style="background:none; border:none; font-size: 1.6rem; cursor:pointer; color:var(--color-muted);"
+          aria-label="Close Menu">✕</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link active" onclick="navigateMobile('home')">Home <span>→</span></a>
+        <a href="#about" class="mobile-nav-link" onclick="navigateMobile('about')">About Us <span>→</span></a>
+        <a href="#services" class="mobile-nav-link" onclick="navigateMobile('services')">Services <span>→</span></a>
+        <a href="#pricing" class="mobile-nav-link" onclick="navigateMobile('pricing')">Pricing <span>→</span></a>
+        <a href="#team" class="mobile-nav-link" onclick="navigateMobile('team')">Our Specialists <span>→</span></a>
+        <a href="#gallery" class="mobile-nav-link" onclick="navigateMobile('gallery')">Visual Gallery <span>→</span></a>
+        <a href="#testimonials" class="mobile-nav-link" onclick="navigateMobile('testimonials')">Client Stories
+          <span>→</span></a>
+        <a href="#contact" class="mobile-nav-link" onclick="navigateMobile('contact')">Location & Contact
+          <span>→</span></a>
+        <a href="#booking" class="mobile-nav-link" onclick="navigateMobile('booking')">Book Online <span>→</span></a>
+      </nav>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p style="margin-bottom: 0.5rem; font-weight: 600; color: var(--color-text);">Singanayakanahalli, Bengaluru</p>
+      <p style="font-size: 0.8rem; margin-bottom: 1.2rem;">Open Daily: 9:30 AM – 8:30 PM</p>
+      <button class="btn btn-primary" style="width: 100%;" onclick="openBookingModal(); toggleMobileMenu(false);">
+        Book Appointment
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       PAGE VIEWS SYSTEM (Full multi-page simulation with dedicated URLs/hashes)
+       ========================================================================= -->
+
+  <main id="view-home" class="page-view active-page">
+
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="heroHeadline">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="eyebrow">A Serene Sanctuary of Luxury Care</span>
+            <h1 id="heroHeadline" class="hero-title">
+              Enhance Your <span>Natural Grace</span>
+            </h1>
+            <p class="hero-description">
+              Where high-end beauty artistry, holistic spa wellness, and personalized grooming come together in an
+              atmosphere designed for complete relaxation and confidence.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" onclick="openBookingModal()">
+                Book an Appointment
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+              <a href="#services" class="btn btn-secondary" onclick="navigateTo('services'); return false;">
+                Explore Services
+              </a>
+            </div>
+
+            <div class="hero-trust-row">
+              <div class="trust-stat">
+                <span class="trust-stat-num">18,500+</span>
+                <span class="trust-stat-label">Delighted Guests</span>
+              </div>
+              <div class="trust-separator"></div>
+              <div class="trust-stat">
+                <span class="trust-stat-num">4.9 ★</span>
+                <span class="trust-stat-label">Google Rating</span>
+              </div>
+              <div class="trust-separator"></div>
+              <div class="trust-stat">
+                <span class="trust-stat-num">12+</span>
+                <span class="trust-stat-label">Years of Craft</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80"
+                alt="SLV Wings Unisex Salon modern luxury styling suite and serene interior"
+                onerror="this.src='https://placehold.co/900x1100/EDE3D7/292625?text=SLV+Wings+Salon+Interior'"
+                loading="eager">
+            </div>
+
+            <!-- Floating service card micro-interaction -->
+            <div class="hero-floating-card">
+              <div class="floating-card-icon" aria-hidden="true">✦</div>
+              <div class="floating-card-text">
+                <strong>Signature Hair Rituals</strong>
+                <span>Personalized Consultation Included</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Philosophy Introduction -->
+    <section class="section-py" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3.5rem; align-items: center;">
+          <div>
+            <span class="eyebrow">The SLV Wings Philosophy</span>
+            <h2>Beauty Should Feel Personal, Effortless & Empowering</h2>
+            <p style="margin: 1.4rem 0 1.2rem;">
+              At SLV Wings Unisex Salon, we believe that true elegance is never manufactured—it is uncovered. Located in
+              Bengaluru, our studio is dedicated to providing personalized grooming, bridal makeup, revitalizing
+              facials, and hair design tailored precisely to your features, lifestyle, and spirit.
+            </p>
+            <p>
+              Every chair in our salon is a haven of hygiene, attentive listening, and clinical aesthetic precision
+              where you can unwind while our master specialists care for your hair, skin, and wellbeing.
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="#about" class="btn btn-outline-gold" onclick="navigateTo('about'); return false;">Discover Our
+                Story & Values</a>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80"
+              alt="Artisan hair coloring and balayage styling session"
+              style="width: 100%; height: 260px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-subtle);"
+              onerror="this.src='https://placehold.co/600x600/EDE3D7/292625?text=Hair+Styling'">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80"
+              alt="Relaxing botanical facial and skincare massage"
+              style="width: 100%; height: 260px; object-fit: cover; border-radius: var(--radius-lg); margin-top: 1.8rem; box-shadow: var(--shadow-subtle);"
+              onerror="this.src='https://placehold.co/600x600/EDE3D7/292625?text=Skincare+Spa'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Services Preview -->
+    <section class="section-py" style="background-color: var(--color-background);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Curated Menu</span>
+          <h2>Featured Salon Experiences</h2>
+          <p>Carefully calibrated rituals using world-class organic-infused formulations and modern styling techniques.
+          </p>
+        </div>
+
+        <div class="services-grid" id="homeFeaturedServices">
+          <!-- Featured Service 1: Keratin Smoothing -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Hair Styling</span>
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&q=80"
+                alt="Keratin smoothing and silk protein infusion treatment"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Keratin+Treatment'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 120 - 150 min</span>
+                <span>Unisex</span>
+              </div>
+              <h3 class="service-title">Keratin Silk Infusion</h3>
+              <p class="service-desc">Deep protein restructuring treatment eliminating frizz and restoring mirror-like
+                gloss and resilience for up to 5 months.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹4,499</span>
+                  <span class="service-price-sub">Starting price</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Keratin Silk Infusion')">Book This</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Service 2: Glow Hydra Facial -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Skin Care</span>
+              <img src="https://images.unsplash.com/photo-1512290900672-1f55a153285c?auto=format&fit=crop&w=700&q=80"
+                alt="Glow Hydra Facial deep cleansing and hyaluronic infusion"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Hydra+Facial'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 60 min</span>
+                <span>All Skin Types</span>
+              </div>
+              <h3 class="service-title">Hydra Glow Radiance Ritual</h3>
+              <p class="service-desc">Multistep vortex cleansing, customized lymphatic stimulation, and hyaluronic
+                infusion that reveals an immediate luminous dewy glow.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹2,199</span>
+                  <span class="service-price-sub">Indicative price</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Hydra Glow Radiance Ritual')">Book This</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Service 3: HD Bridal Makeup -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Bridal Studio</span>
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=80"
+                alt="HD Bridal Makeup and intricate styling by master artist"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Bridal+Makeup'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 150 min</span>
+                <span>Bridal Suite</span>
+              </div>
+              <h3 class="service-title">Signature HD Bridal Couture</h3>
+              <p class="service-desc">High-definition, sweat-resistant bridal artistry with precision contouring,
+                premium lash extensions, dupatta draping, and hair ornamentation.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹9,999</span>
+                  <span class="service-price-sub">Customizable</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Signature HD Bridal Couture')">Book This</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="#services" class="btn btn-secondary" onclick="navigateTo('services'); return false;">
+            View Complete 45+ Services Menu →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose SLV Wings Section -->
+    <section class="section-py" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">The SLV Standard</span>
+          <h2>Why Guests Choose SLV Wings</h2>
+          <p>Every detail from our autoclaved tools to our bespoke consultations is designed around comfort, hygiene,
+            and timeless aesthetics.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-box">✂</div>
+            <h3 class="feature-title">Certified Stylists</h3>
+            <p style="font-size: 0.9rem; color: var(--color-muted);">Our master artisans hold international credentials
+              and undergo continuous seasonal trend training.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-box">🌿</div>
+            <h3 class="feature-title">Clean Formulations</h3>
+            <p style="font-size: 0.9rem; color: var(--color-muted);">We exclusively stock professional dermatological
+              grades and ammoniac-free organic-enriched color lines.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-box">✨</div>
+            <h3 class="feature-title">Hospital-Grade Hygiene</h3>
+            <p style="font-size: 0.9rem; color: var(--color-muted);">100% single-use disposable capes, sterilized
+              stainless tools, and pristine private treatment suites.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-box">🤍</div>
+            <h3 class="feature-title">Tailored Consultations</h3>
+            <p style="font-size: 0.9rem; color: var(--color-muted);">We study your face structure, scalp profile, and
+              skin undertones before lifting a single pair of scissors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Booking Banner -->
+    <section class="section-py"
+      style="background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-primary-light) 100%);">
+      <div class="container" style="text-align: center; max-width: 780px;">
+        <span class="eyebrow">Reserve Your Escape</span>
+        <h2>Ready for an Unmatched Pampering Session?</h2>
+        <p style="font-size: 1.15rem; margin: 1.2rem auto 2.2rem; color: var(--color-text);">
+          Whether you require a quick weekend blow dry, therapeutic foot reflexology, or full bridal transformation, our
+          master specialists are at your service.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <button class="btn btn-primary" onclick="openBookingModal()">Book Appointment Now</button>
+          <a href="https://wa.me/919731121678?text=Hello%20SLV%20Wings%20Salon,%20I%20would%20like%20to%20inquire%20about%20booking%20an%20appointment."
+            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <main id="view-about" class="page-view">
+    <section class="section-py"
+      style="background: linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-background) 100%);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Our Story & Heritage</span>
+          <h1>Beauty Designed Around You</h1>
+          <p>Founded on the principle that self-care is not an indulgence, but an essential foundation for daily
+            confidence and grace.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 3.5rem; align-items: center; margin-bottom: 4rem;">
+          <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; align-items: center;">
+            <div>
+              <h2 style="font-size: 2.2rem; margin-bottom: 1.2rem;">Crafting Confidence in Bengaluru Since 2014</h2>
+              <p style="margin-bottom: 1.2rem;">
+                SLV Wings Unisex Salon began with a singular vision: to dismantle the chaotic, rushed salon environment
+                and replace it with a calm, refined atelier where both men and women receive bespoke attention.
+              </p>
+              <p style="margin-bottom: 1.2rem;">
+                Located on Dodabullapura Main Road in Singanayakanahalli, Yelahanka, our second-floor sanctuary is
+                bathed in warm ambient light and soothing acoustic melodies. Every stylist, colorist, and esthetician on
+                our roster is hand-selected not only for technical mastery, but for emotional intelligence and genuine
+                warmth.
+              </p>
+              <p>
+                From modern precision fades and European balayage to Vedic scalp oil treatments and traditional South
+                Indian bridal artistry, we celebrate individual identity.
+              </p>
+            </div>
+            <div style="position: relative;">
+              <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+                alt="SLV Wings Salon consultation desk and luxury ambiance"
+                style="width: 100%; border-radius: var(--radius-xl); box-shadow: var(--shadow-modal); aspect-ratio: 4/3; object-fit: cover;"
+                onerror="this.src='https://placehold.co/800x600/EDE3D7/292625?text=Our+Philosophy'">
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Statistics Counter Banner -->
+        <div class="stats-banner" id="aboutStatsBanner">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-counter" data-target="12">0</div>
+              <div class="stat-item-label">Years of Excellence</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-counter" data-target="18500">0</div>
+              <div class="stat-item-label">Happy Guests</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-counter" data-target="45">0</div>
+              <div class="stat-item-label">Curated Services</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-counter" data-target="24">0</div>
+              <div class="stat-item-label">Master Specialists</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Core Feature Pillars -->
+        <div style="margin-top: 5rem;">
+          <div class="section-header">
+            <span class="eyebrow">Our Uncompromising Standards</span>
+            <h2>Six Pillars of the SLV Wings Promise</h2>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-box">🏆</div>
+              <h3 class="feature-title">Expert Professionals</h3>
+              <p>Certified colorists and licensed estheticians with extensive background in luxury salons.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">✨</div>
+              <h3 class="feature-title">Premium Products</h3>
+              <p>Top-tier haircare and botanical skincare curated from trusted international leaders.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">🤍</div>
+              <h3 class="feature-title">Personalized Care</h3>
+              <p>No cookie-cutter routines. Every cut and treatment is adapted to your skin type and hair texture.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">🕊️</div>
+              <h3 class="feature-title">Relaxing Atmosphere</h3>
+              <p>Calm earth tones, ambient acoustic sounds, and organic aroma blends that de-stress the mind.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">🧼</div>
+              <h3 class="feature-title">Hygiene First</h3>
+              <p>Medical-grade UV autoclaves, single-use linens, and rigorous sanitized workstations.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">🔬</div>
+              <h3 class="feature-title">Modern Techniques</h3>
+              <p>Balayage melting, precision shearing, painless waxing, and clinical galvanic facials.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <main id="view-services" class="page-view">
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Menu of Indulgence</span>
+          <h1>Exceptional Hair, Skin & Wellness</h1>
+          <p>Explore our thoughtfully designed services. Filter by category or search to discover your next ritual.</p>
+        </div>
+
+        <!-- Interactive Category Filters -->
+        <div class="category-filter-nav" role="tablist" aria-label="Service Categories">
+          <button class="filter-btn active" data-filter="all" onclick="filterServices('all')">All Services</button>
+          <button class="filter-btn" data-filter="hair" onclick="filterServices('hair')">Hair Styling & Cuts</button>
+          <button class="filter-btn" data-filter="skin" onclick="filterServices('skin')">Skin Care & Facials</button>
+          <button class="filter-btn" data-filter="bridal" onclick="filterServices('bridal')">Bridal Couture</button>
+          <button class="filter-btn" data-filter="nails" onclick="filterServices('nails')">Manicure & Pedicure</button>
+          <button class="filter-btn" data-filter="treatment" onclick="filterServices('treatment')">Hair Treatments &
+            Spa</button>
+        </div>
+
+        <!-- Live Services Grid -->
+        <div class="services-grid" id="fullServicesGrid">
+
+          <!-- Hair 1 -->
+          <article class="service-card" data-category="hair">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Hair Styling</span>
+              <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=700&q=80"
+                alt="Signature haircut and customized blow dry styling"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Haircut'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 45 min</span>
+                <span>Unisex</span>
+              </div>
+              <h3 class="service-title">Signature Tailored Haircut</h3>
+              <p class="service-desc">Includes in-depth face shape consultation, clarifying scalp shampoo, customized
+                precision texturizing, and signature blowout.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹799</span>
+                  <span class="service-price-sub">Starting price</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Signature Tailored Haircut')">Book This Service</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hair 2 -->
+          <article class="service-card" data-category="hair">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Hair Styling</span>
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80"
+                alt="Global hair color and dimensional highlights"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Hair+Color'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 90 - 120 min</span>
+                <span>Ammonia-Free</span>
+              </div>
+              <h3 class="service-title">Global Hair Color & Gloss</h3>
+              <p class="service-desc">Rich, reflective multidimensional coloring enriched with argan and keratin
+                proteins for long-lasting vibrancy and luminous shine.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹2,899</span>
+                  <span class="service-price-sub">Length dependent</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Global Hair Color & Gloss')">Book This Service</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hair Treatment 1 -->
+          <article class="service-card" data-category="treatment">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Treatments</span>
+              <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=700&q=80"
+                alt="Deep therapeutic hair spa with steam and acupressure massage"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Hair+Spa'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 60 min</span>
+                <span>Restorative</span>
+              </div>
+              <h3 class="service-title">Intense Moroccan Hair Spa</h3>
+              <p class="service-desc">Therapeutic essential oils, steam infusion, and cranial pressure point massage to
+                calm dry scalps and revive heat-damaged strands.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹1,499</span>
+                  <span class="service-price-sub">All lengths</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Intense Moroccan Hair Spa')">Book This Service</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skin 1 -->
+          <article class="service-card" data-category="skin">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Skin Care</span>
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80"
+                alt="Luxury anti-aging peptide facial"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Anti-Ageing+Facial'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 75 min</span>
+                <span>Anti-Ageing</span>
+              </div>
+              <h3 class="service-title">Gold Peptide Youth Elixir Facial</h3>
+              <p class="service-desc">Infused with 24k colloidal gold leaf and bioactive peptides that stimulate
+                collagen synthesis, tighten contour lines, and boost elasticity.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹2,899</span>
+                  <span class="service-price-sub">Fixed package</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Gold Peptide Youth Elixir Facial')">Book This Service</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skin 2 -->
+          <article class="service-card" data-category="skin">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Skin Care</span>
+              <img src="https://images.unsplash.com/photo-1512290900672-1f55a153285c?auto=format&fit=crop&w=700&q=80"
+                alt="Deep cleansing detan skin clarifying treatment"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Detan+Ritual'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 45 min</span>
+                <span>Brightening</span>
+              </div>
+              <h3 class="service-title">Botanical Brightening Detan</h3>
+              <p class="service-desc">Kojic acid and bearberry enzyme masque to gently lift UV damage, pollution
+                dullness, and hyperpigmentation while replenishing hydration.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹1,199</span>
+                  <span class="service-price-sub">Face & Neck</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Botanical Brightening Detan')">Book This Service</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bridal 1 -->
+          <article class="service-card" data-category="bridal">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Bridal</span>
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80"
+                alt="HD Engagement and Reception makeup"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Reception+Makeup'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 90 min</span>
+                <span>Bridal Suite</span>
+              </div>
+              <h3 class="service-title">Engagement & Sangeet Glow</h3>
+              <p class="service-desc">Sculpted airbrush or HD complexion, dramatic statement eyes, intricate hairstyle
+                styling, floral pins, and saree/lehenga draping.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹5,999</span>
+                  <span class="service-price-sub">Complete styling</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Engagement & Sangeet Glow')">Book This Service</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nails 1 -->
+          <article class="service-card" data-category="nails">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Nail Lounge</span>
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80"
+                alt="Luxury Rose Spa Pedicure and foot massage"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Spa+Pedicure'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 60 min</span>
+                <span>Pampering</span>
+              </div>
+              <h3 class="service-title">Rose Petal Foot Reflexology Pedicure</h3>
+              <p class="service-desc">Aromatic Himalayan salt soak, organic sugarcane exfoliation, calluses smoothing,
+                rose oil massage, cuticle care, and chip-free polish.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹999</span>
+                  <span class="service-price-sub">Includes massage</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Rose Petal Foot Reflexology Pedicure')">Book This Service</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nails 2 -->
+          <article class="service-card" data-category="nails">
+            <div class="service-img-wrapper">
+              <span class="service-badge">Nail Lounge</span>
+              <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&q=80"
+                alt="Gel nail extensions and chrome french manicure"
+                onerror="this.src='https://placehold.co/700x500/EDE3D7/292625?text=Gel+Nails'" loading="lazy">
+            </div>
+            <div class="service-body">
+              <div class="service-meta-row">
+                <span class="service-duration">⏱ 75 min</span>
+                <span>Long-Lasting</span>
+              </div>
+              <h3 class="service-title">Couture Gel Extensions & Art</h3>
+              <p class="service-desc">Sculpted soft-gel extensions tailored to your natural nail bed, crowned with
+                custom chrome, ombré, or minimalist crystal accents.</p>
+              <div class="service-footer">
+                <div>
+                  <span class="service-price">₹1,899</span>
+                  <span class="service-price-sub">Full set</span>
+                </div>
+                <button class="btn btn-outline-gold btn-sm"
+                  onclick="navigateTo('booking', 'Couture Gel Extensions & Art')">Book This Service</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty state helper -->
+        <div id="servicesEmptyState" style="display: none; text-align: center; padding: 4rem 1rem;">
+          <p style="font-size: 1.2rem; font-family: var(--font-serif); color: var(--color-text);">No services found in
+            this category.</p>
+          <button class="btn btn-outline-gold btn-sm" style="margin-top: 1rem;" onclick="filterServices('all')">Reset
+            Filter to All</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <main id="view-pricing" class="page-view">
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Transparent Value</span>
+          <h1>Salon Pricing & Curated Packages</h1>
+          <p>Invest in craftsmanship, genuine imported formulations, and personalized hospitality with no hidden
+            surcharges.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- Essential Tier -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <span class="eyebrow" style="background:none; border:none; padding:0; margin-bottom:0.4rem;">Classic
+                Refresh</span>
+              <h3>The Everyday Ritual</h3>
+              <div class="pricing-amount">₹1,299</div>
+              <p style="font-size: 0.85rem; color: var(--color-muted);">Ideal for monthly maintenance and fresh styling.
+              </p>
+            </div>
+            <ul class="pricing-features-list">
+              <li><span class="pricing-check-icon">✓</span> Tailored Signature Haircut & Scalp Wash</li>
+              <li><span class="pricing-check-icon">✓</span> Deep Conditioning Hair Steam Treatment</li>
+              <li><span class="pricing-check-icon">✓</span> Classic Herbal Manicure or Pedicure</li>
+              <li><span class="pricing-check-icon">✓</span> Precision Eyebrow Threading & Beard Shaping</li>
+              <li><span class="pricing-check-icon">✓</span> Herbal Tea or Artisan Coffee Service</li>
+            </ul>
+            <button class="btn btn-outline-gold" style="width: 100%;"
+              onclick="navigateTo('booking', 'Classic Refresh Package')">
+              Book This Package
+            </button>
+          </div>
+
+          <!-- Featured Tier: Signature Glow -->
+          <div class="pricing-card featured">
+            <span class="pricing-badge">Most Popular</span>
+            <div class="pricing-header">
+              <span class="eyebrow" style="background:none; border:none; padding:0; margin-bottom:0.4rem;">Luxe
+                Sanctuary</span>
+              <h3>The Signature Radiance</h3>
+              <div class="pricing-amount">₹3,499</div>
+              <p style="font-size: 0.85rem; color: var(--color-muted);">Our most requested unisex rejuvenation package.
+              </p>
+            </div>
+            <ul class="pricing-features-list">
+              <li><span class="pricing-check-icon">✓</span> Advanced Hydra Glow Radiance Facial (60m)</li>
+              <li><span class="pricing-check-icon">✓</span> Intense Moroccan Argan Scalp Spa & Blowout</li>
+              <li><span class="pricing-check-icon">✓</span> Rose Petal Foot Reflexology Spa Pedicure</li>
+              <li><span class="pricing-check-icon">✓</span> Neck & Shoulder Tension Release Massage</li>
+              <li><span class="pricing-check-icon">✓</span> Full Botanical Detan (Face & Neck)</li>
+            </ul>
+            <button class="btn btn-primary" style="width: 100%;"
+              onclick="navigateTo('booking', 'The Signature Radiance Package')">
+              Book This Package
+            </button>
+          </div>
+
+          <!-- Bridal / Royal Tier -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <span class="eyebrow" style="background:none; border:none; padding:0; margin-bottom:0.4rem;">Bridal &
+                Occasion</span>
+              <h3>Imperial Bridal Suite</h3>
+              <div class="pricing-amount">₹14,999</div>
+              <p style="font-size: 0.85rem; color: var(--color-muted);">Complete wedding day & pre-bridal care.</p>
+            </div>
+            <ul class="pricing-features-list">
+              <li><span class="pricing-check-icon">✓</span> High-Definition Longwear Bridal Makeup</li>
+              <li><span class="pricing-check-icon">✓</span> Couture Hairstyling & Real Floral Pinning</li>
+              <li><span class="pricing-check-icon">✓</span> Intricate Saree / Lehenga Draping</li>
+              <li><span class="pricing-check-icon">✓</span> Luxury Gel Extensions & Nail Art Session</li>
+              <li><span class="pricing-check-icon">✓</span> Pre-Bridal Gold Glow Radiance Prep (3 Days Prior)</li>
+            </ul>
+            <button class="btn btn-outline-gold" style="width: 100%;"
+              onclick="navigateTo('booking', 'Imperial Bridal Suite Package')">
+              Book This Package
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Indicative Disclaimer Notice Required by Master Prompt -->
+        <div class="pricing-disclaimer">
+          <p style="margin: 0; font-weight: 500;">
+            <strong>Please Note:</strong> All stated prices are in INR (₹), indicative in nature, and may vary depending
+            on individual hair length/density, product line selection, skin requirements, and bespoke customization. Our
+            stylists provide an exact quote prior to starting every ritual.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <main id="view-team" class="page-view">
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">The Master Artisans</span>
+          <h1>Meet Our Dedicated Specialists</h1>
+          <p>Passionate artists and certified therapists committed to personalizing every contour and strand.</p>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- Stylist 1 -->
+          <article class="team-card">
+            <div class="team-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+                alt="Ananya Sharma - Lead Hair Stylist & Creative Director"
+                onerror="this.src='https://placehold.co/600x800/EDE3D7/292625?text=Ananya+Sharma'" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Ananya Sharma</h3>
+              <p class="team-role">Lead Hair Stylist & Colorist</p>
+              <p class="team-bio">Trained in London and Milan with over 11 years mastering textured cuts, balayage
+                contouring, and keratin restorations.</p>
+              <div class="team-tags">
+                <span class="team-tag">Balayage</span>
+                <span class="team-tag">Couture Cuts</span>
+                <span class="team-tag">Keratin</span>
+              </div>
+              <button class="btn btn-outline-gold btn-sm" style="width: 100%;"
+                onclick="navigateTo('booking', 'Stylist Preference: Ananya Sharma')">Book With Ananya</button>
+            </div>
+          </article>
+
+          <!-- Specialist 2 -->
+          <article class="team-card">
+            <div class="team-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                alt="Meera Rao - Senior Beauty Specialist & Spa Lead"
+                onerror="this.src='https://placehold.co/600x800/EDE3D7/292625?text=Meera+Rao'" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Meera Rao</h3>
+              <p class="team-role">Senior Beauty Specialist</p>
+              <p class="team-bio">CIDESCO-certified clinical esthetician renowned for customized dermal therapies,
+                lymphatic facials, and anti-aging protocols.</p>
+              <div class="team-tags">
+                <span class="team-tag">Hydra Facials</span>
+                <span class="team-tag">Dermal Care</span>
+                <span class="team-tag">Detan</span>
+              </div>
+              <button class="btn btn-outline-gold btn-sm" style="width: 100%;"
+                onclick="navigateTo('booking', 'Stylist Preference: Meera Rao')">Book With Meera</button>
+            </div>
+          </article>
+
+          <!-- Makeup Artist 3 -->
+          <article class="team-card">
+            <div class="team-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80"
+                alt="Riya Kapoor - Master Bridal Makeup Artist"
+                onerror="this.src='https://placehold.co/600x800/EDE3D7/292625?text=Riya+Kapoor'" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Riya Kapoor</h3>
+              <p class="team-role">Master Bridal Artist</p>
+              <p class="team-bio">Having perfected over 400 Indian brides, Riya creates radiant, long-lasting looks that
+                photograph flawlessly under all lighting.</p>
+              <div class="team-tags">
+                <span class="team-tag">HD Bridal</span>
+                <span class="team-tag">Airbrush</span>
+                <span class="team-tag">Draping</span>
+              </div>
+              <button class="btn btn-outline-gold btn-sm" style="width: 100%;"
+                onclick="navigateTo('booking', 'Stylist Preference: Riya Kapoor')">Book With Riya</button>
+            </div>
+          </article>
+
+          <!-- Men's Stylist 4 -->
+          <article class="team-card">
+            <div class="team-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+                alt="Arjun Mehta - Senior Men's Grooming Stylist"
+                onerror="this.src='https://placehold.co/600x800/EDE3D7/292625?text=Arjun+Mehta'" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Arjun Mehta</h3>
+              <p class="team-role">Senior Men's Stylist</p>
+              <p class="team-bio">Master of razor fades, luxury hot towel shaves, beard architecture, and customized
+                scalp revitalizing treatments.</p>
+              <div class="team-tags">
+                <span class="team-tag">Fades</span>
+                <span class="team-tag">Beard Sculpt</span>
+                <span class="team-tag">Men's Spa</span>
+              </div>
+              <button class="btn btn-outline-gold btn-sm" style="width: 100%;"
+                onclick="navigateTo('booking', 'Stylist Preference: Arjun Mehta')">Book With Arjun</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <main id="view-gallery" class="page-view">
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Visual Portfolio</span>
+          <h1>Artistry in Every Detail</h1>
+          <p>Click any photograph to explore our work in high-definition through our interactive gallery viewer.</p>
+        </div>
+
+        <!-- Gallery Filter Navigation -->
+        <div class="category-filter-nav" aria-label="Gallery Categories">
+          <button class="filter-btn active" onclick="filterGallery('all')">All Work</button>
+          <button class="filter-btn" onclick="filterGallery('salon')">Salon Interior</button>
+          <button class="filter-btn" onclick="filterGallery('hair')">Hair & Styling</button>
+          <button class="filter-btn" onclick="filterGallery('bridal')">Bridal & Makeup</button>
+          <button class="filter-btn" onclick="filterGallery('skin')">Skin & Spa</button>
+          <button class="filter-btn" onclick="filterGallery('nails')">Nail Studio</button>
+        </div>
+
+        <!-- Masonry Grid with 12 Curated Photos -->
+        <div class="gallery-grid" id="galleryGrid">
+
+          <div class="gallery-item tall" data-cat="salon" onclick="openLightbox(0)">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80"
+              alt="Main Styling Floor & Reception Suite" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-caption-title">Main Styling Floor</h4>
+              <span class="gallery-caption-tag">Salon Sanctuary</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-cat="hair" onclick="openLightbox(1)">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80"
+              alt="Soft Honey Balayage & Beach Waves" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-caption-title">Soft Honey Balayage</h4>
+              <span class="gallery-caption-tag">Hair Artistry</span>
+            </div>
+          </div>
+
+          <div class="gallery-item tall" data-cat="bridal" onclick="openLightbox(2)">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80"
+              alt="Traditional South Indian Bride in Crimson & Gold" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-caption-title">South Indian Bridal Radiance</h4>
+              <span class="gallery-caption-tag">Bridal Couture</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-cat="skin" onclick="openLightbox(3)">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+              alt="Dermal Hydra Glow Treatment Session" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-caption-title">Hydra Glow Therapy</h4>
+              <span class="gallery-caption-tag">Skincare Ritual</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-cat="nails" onclick="openLightbox(4)">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+              alt="Minimalist Rose-Gold Chrome Nails" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-caption-title">Rose-Gold Gel Accents</h4>
+              <span class="gallery-caption-tag">Nail Lounge</span>
+            </div>
+          </div>
+
+          <div class="gallery-item tall" data-cat="hair" onclick="openLightbox(5)">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+              alt="Precision Men's Low Fade & Beard Grooming" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-caption-title">Men's Precision Fade</h4>
+              <span class="gallery-caption-tag">Grooming Bar</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-cat="salon" onclick="openLightbox(6)">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+              alt="Luxury Private Treatment Room" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-caption-title">Private Treatment Suite</h4>
+              <span class="gallery-caption-tag">Salon Interior</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-cat="bridal" onclick="openLightbox(7)">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+              alt="Dewy Glow Engagement Makeup" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-caption-title">Dewy Engagement Look</h4>
+              <span class="gallery-caption-tag">Bridal Studio</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <main id="view-testimonials" class="page-view">
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Client Reflections</span>
+          <h1>Words From Our Cherished Guests</h1>
+          <p>Real stories of rejuvenation, transformative hairstyles, and unforgettable wedding memories.</p>
+        </div>
+
+        <div class="testimonial-carousel" id="testimonialCarousel">
+          <div class="testimonial-slide-track" id="testimonialTrack">
+
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-mark">“</div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-text">
+                  "From the moment you step into SLV Wings, the aroma of essential oils and gentle greeting sets the
+                  tone. Ananya did my balayage and haircut; she carefully understood my natural curls and gave me a
+                  seamless style that is completely low-maintenance."
+                </p>
+                <div class="testimonial-author-box">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80"
+                    alt="Priya S." class="author-avatar"
+                    onerror="this.src='https://placehold.co/100x100/EDE3D7/292625?text=PS'">
+                  <div class="author-info">
+                    <div class="author-name">Priya Sundaram</div>
+                    <div class="author-service">Signature Balayage & Styling</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-mark">“</div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-text">
+                  "Riya handled my bridal makeup for both my Muhurtham and Reception in Yelahanka. She was calm,
+                  punctual, and delivered a naturally luminous look that didn't cake or crease even after 8 hours under
+                  heavy stage lights!"
+                </p>
+                <div class="testimonial-author-box">
+                  <img
+                    src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=120&q=80"
+                    alt="Sneha Reddy" class="author-avatar"
+                    onerror="this.src='https://placehold.co/100x100/EDE3D7/292625?text=SR'">
+                  <div class="author-info">
+                    <div class="author-name">Sneha Reddy</div>
+                    <div class="author-service">Complete Bridal Package</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-mark">“</div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-text">
+                  "Best men's grooming lounge in northern Bengaluru. Arjun's attention to detail during beard styling
+                  and hot towel shave is unmatched. The cleanliness and sanitization standard is top notch."
+                </p>
+                <div class="testimonial-author-box">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80"
+                    alt="Vikram Nambiar" class="author-avatar"
+                    onerror="this.src='https://placehold.co/100x100/EDE3D7/292625?text=VN'">
+                  <div class="author-info">
+                    <div class="author-name">Vikram Nambiar</div>
+                    <div class="author-service">Men's Executive Grooming</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote-mark">“</div>
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-text">
+                  "The Hydra Glow Facial worked absolute wonders before my brother's wedding. Meera analyzed my skin
+                  thoroughly and customized every serum. My face was glowing for weeks without any breakout."
+                </p>
+                <div class="testimonial-author-box">
+                  <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80"
+                    alt="Divya K." class="author-avatar"
+                    onerror="this.src='https://placehold.co/100x100/EDE3D7/292625?text=DK'">
+                  <div class="author-info">
+                    <div class="author-name">Divya Krishnamurthy</div>
+                    <div class="author-service">Hydra Glow Radiance Ritual</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-nav-row">
+            <button class="btn btn-secondary btn-sm" onclick="prevTestimonial()" aria-label="Previous Review">←</button>
+            <div id="testimonialDots" style="display: flex; gap: 8px;"></div>
+            <button class="btn btn-secondary btn-sm" onclick="nextTestimonial()" aria-label="Next Review">→</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <main id="view-contact" class="page-view">
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Connect With Us</span>
+          <h1>Visit Our Luxury Studio</h1>
+          <p>Conveniently located on Dodabullapura Main Road in Yelahanka, Bengaluru.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: stretch;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+
+            <!-- Left Info Card -->
+            <div class="contact-info-card">
+              <div>
+                <span class="eyebrow"
+                  style="background: rgba(255,255,255,0.1); color: var(--color-secondary); border-color: rgba(255,255,255,0.2);">
+                  SLV WINGS UNISEX SALON
+                </span>
+                <h3 style="color: #FFFFFF; font-size: 1.8rem; margin: 0.8rem 0 1.2rem;">We Look Forward to Welcoming You
+                </h3>
+                <p style="color: #D3C9C3; font-size: 0.95rem;">
+                  Step in for a complimentary beverage, customized styling consultation, or reserve our private bridal
+                  suite for your special day.
+                </p>
+
+                <div class="contact-info-list">
+                  <div class="contact-info-item">
+                    <div class="contact-icon-bubble">📍</div>
+                    <div>
+                      <strong style="color: #FFFFFF; display: block; font-size: 0.95rem;">Our Address</strong>
+                      <span style="color: #C0B4AC; font-size: 0.88rem; line-height: 1.45; display: block;">
+                        58 & 18, 2nd Floor, Dodabullapura Main Road, Singanayakanahalli, Opp. Godrej Avenue, Yelahanka,
+                        Singanayakanahalli, Karnataka 560119
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <div class="contact-icon-bubble">📞</div>
+                    <div>
+                      <strong style="color: #FFFFFF; display: block; font-size: 0.95rem;">Phone & WhatsApp</strong>
+                      <a href="tel:+919731121678"
+                        style="color: var(--color-secondary); text-decoration: none; font-size: 0.95rem; font-weight: 600;">+91
+                        9731121678</a>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <div class="contact-icon-bubble">✉️</div>
+                    <div>
+                      <strong style="color: #FFFFFF; display: block; font-size: 0.95rem;">Direct Email</strong>
+                      <a href="mailto:hello@slvwingssalon.com"
+                        style="color: var(--color-secondary); text-decoration: none; font-size: 0.95rem;">hello@slvwingssalon.com</a>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <div class="contact-icon-bubble">⏰</div>
+                    <div>
+                      <strong style="color: #FFFFFF; display: block; font-size: 0.95rem;">Operational Hours</strong>
+                      <span style="color: #C0B4AC; font-size: 0.88rem; display: block;">
+                        Monday – Saturday: 9:30 AM – 8:30 PM<br>
+                        Sunday: 10:00 AM – 6:00 PM
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                <a href="https://wa.me/919731121678?text=Hello%20SLV%20Wings%20Salon,%20I%20have%20an%20inquiry."
+                  target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  Chat on WhatsApp
+                </a>
+                <a href="https://maps.google.com/?q=Singanayakanahalli+Bengaluru" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-secondary btn-sm"
+                  style="color: #FFFFFF; border-color: rgba(255,255,255,0.4);">
+                  Open in Google Maps
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Interactive Contact Form -->
+            <div
+              style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: clamp(1.8rem, 4vw, 2.5rem); box-shadow: var(--shadow-subtle);">
+              <h3 style="margin-bottom: 0.4rem;">Send an Inquiry</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1.8rem;">Have a question regarding custom bridal packages or
+                corporate grooming? Drop us a note.</p>
+
+              <form id="contactForm" onsubmit="handleContactSubmit(event)" novalidate>
+                <div class="form-group">
+                  <label class="form-label" for="contactName">Your Full Name <span class="required">*</span></label>
+                  <input type="text" id="contactName" class="form-control" placeholder="e.g. Ananya Sen" required>
+                  <span class="form-error-msg">Please provide your name.</span>
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label" for="contactPhone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. 9876543210" required>
+                    <span class="form-error-msg">Valid 10-digit phone number is required.</span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" class="form-control" placeholder="name@domain.com">
+                    <span class="form-error-msg">Please enter a valid email address.</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactTopic">Inquiry Category</label>
+                  <select id="contactTopic" class="form-control">
+                    <option value="General Inquiry">General Service Inquiry</option>
+                    <option value="Bridal Package Consultation">Bridal Package Consultation</option>
+                    <option value="Hair Transformation / Color">Hair Transformation / Balayage</option>
+                    <option value="Corporate / Group Booking">Corporate / Group Booking</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactMessage">Your Message <span class="required">*</span></label>
+                  <textarea id="contactMessage" class="form-control" rows="4"
+                    placeholder="How may our specialists assist you?" required></textarea>
+                  <span class="form-error-msg">Please enter your message.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <main id="view-booking" class="page-view">
+    <section class="section-py">
+      <div class="container" style="max-width: 820px;">
+        <div class="section-header">
+          <span class="eyebrow">Online Concierge</span>
+          <h1>Reserve Your Sanctuary Time</h1>
+          <p>Select your desired service, date, and specialist. Our salon coordinator will contact you to confirm your
+            schedule.</p>
+        </div>
+
+        <div
+          style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: clamp(2rem, 5vw, 3.5rem); box-shadow: var(--shadow-modal);">
+          <form id="dedicatedBookingForm" onsubmit="handleBookingSubmit(event, 'dedicated')" novalidate>
+
+            <h3
+              style="margin-bottom: 1.2rem; font-size: 1.4rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.6rem;">
+              1. Personal Details</h3>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="bName">Full Name <span class="required">*</span></label>
+                <input type="text" id="bName" class="form-control" placeholder="e.g. Priya Sharma" required>
+                <span class="form-error-msg">Please enter your full name.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bPhone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="bPhone" class="form-control" placeholder="e.g. +91 97311 21678" required>
+                <span class="form-error-msg">Please provide a valid 10-digit phone number.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bEmail">Email Address</label>
+              <input type="email" id="bEmail" class="form-control" placeholder="priya@example.com">
+              <span class="form-error-msg">Please provide a valid email address.</span>
+            </div>
+
+            <h3
+              style="margin: 2.2rem 0 1.2rem; font-size: 1.4rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.6rem;">
+              2. Service & Specialist</h3>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="bService">Select Service Ritual <span class="required">*</span></label>
+                <select id="bService" class="form-control" required>
+                  <option value="">-- Choose a Service --</option>
+                  <option value="Signature Tailored Haircut">Signature Tailored Haircut (₹799)</option>
+                  <option value="Global Hair Color & Gloss">Global Hair Color & Gloss (₹2,899)</option>
+                  <option value="Keratin Silk Infusion">Keratin Silk Infusion (₹4,499)</option>
+                  <option value="Intense Moroccan Hair Spa">Intense Moroccan Hair Spa (₹1,499)</option>
+                  <option value="Hydra Glow Radiance Ritual">Hydra Glow Radiance Ritual (₹2,199)</option>
+                  <option value="Gold Peptide Youth Elixir Facial">Gold Peptide Youth Elixir Facial (₹2,899)</option>
+                  <option value="Signature HD Bridal Couture">Signature HD Bridal Couture (₹9,999)</option>
+                  <option value="Engagement & Sangeet Glow">Engagement & Sangeet Glow (₹5,999)</option>
+                  <option value="Rose Petal Foot Reflexology Pedicure">Rose Petal Foot Reflexology Pedicure (₹999)
+                  </option>
+                  <option value="Couture Gel Extensions & Art">Couture Gel Extensions & Art (₹1,899)</option>
+                  <option value="The Signature Radiance Package">The Signature Radiance Package (₹3,499)</option>
+                </select>
+                <span class="form-error-msg">Please choose a service from the list.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bStylist">Stylist Preference</label>
+                <select id="bStylist" class="form-control">
+                  <option value="Any Available Specialist">Any Available Senior Specialist</option>
+                  <option value="Ananya Sharma (Hair Director)">Ananya Sharma (Hair Director)</option>
+                  <option value="Meera Rao (Skin Specialist)">Meera Rao (Skin Specialist)</option>
+                  <option value="Riya Kapoor (Bridal Artist)">Riya Kapoor (Bridal Artist)</option>
+                  <option value="Arjun Mehta (Men's Specialist)">Arjun Mehta (Men's Specialist)</option>
+                </select>
+              </div>
+            </div>
+
+            <h3
+              style="margin: 2.2rem 0 1.2rem; font-size: 1.4rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.6rem;">
+              3. Schedule Appointment</h3>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="bDate">Preferred Date <span class="required">*</span></label>
+                <input type="date" id="bDate" class="form-control" required>
+                <span class="form-error-msg">Please choose an appointment date.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bTime">Preferred Time Slot <span class="required">*</span></label>
+                <select id="bTime" class="form-control" required>
+                  <option value="">-- Choose Time Window --</option>
+                  <option value="Morning: 10:00 AM - 12:00 PM">Morning (10:00 AM – 12:00 PM)</option>
+                  <option value="Afternoon: 12:00 PM - 03:00 PM">Afternoon (12:00 PM – 03:00 PM)</option>
+                  <option value="Late Afternoon: 03:00 PM - 06:00 PM">Late Afternoon (03:00 PM – 06:00 PM)</option>
+                  <option value="Evening: 06:00 PM - 08:00 PM">Evening (06:00 PM – 08:00 PM)</option>
+                </select>
+                <span class="form-error-msg">Please choose a preferred time slot.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bNotes">Special Requests or Hair/Skin Notes</label>
+              <textarea id="bNotes" class="form-control" rows="3"
+                placeholder="Mention hair length, scalp sensitivity, allergy considerations, or event deadlines."></textarea>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Request Appointment Confirmation
+              </button>
+              <p style="font-size: 0.78rem; color: var(--color-muted); text-align: center; margin-top: 0.8rem;">
+                ✦ Our booking team will contact you via WhatsApp or phone call to finalize your slot. No upfront card
+                payment required.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="globalBookingModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeBookingModal()" aria-label="Close booking modal">✕</button>
+
+      <span class="eyebrow" style="margin-bottom: 0.5rem;">Fast Reservation</span>
+      <h2 id="modalHeading" style="font-size: 1.85rem; margin-bottom: 0.4rem;">Book Your Appointment</h2>
+      <p style="font-size: 0.88rem; margin-bottom: 1.6rem;">Enjoy personalized beauty & wellness at SLV Wings Unisex
+        Salon.</p>
+
+      <form id="modalBookingForm" onsubmit="handleBookingSubmit(event, 'modal')" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="mName">Full Name <span class="required">*</span></label>
+          <input type="text" id="mName" class="form-control" placeholder="Your name" required>
+          <span class="form-error-msg">Please enter your name.</span>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="mPhone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="mPhone" class="form-control" placeholder="10-digit number" required>
+            <span class="form-error-msg">Please enter a valid phone number.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mEmail">Email Address</label>
+            <input type="email" id="mEmail" class="form-control" placeholder="name@domain.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="mService">Service Ritual <span class="required">*</span></label>
+          <select id="mService" class="form-control" required>
+            <option value="">-- Select Service --</option>
+            <option value="Signature Tailored Haircut">Signature Tailored Haircut (₹799)</option>
+            <option value="Global Hair Color & Gloss">Global Hair Color & Gloss (₹2,899)</option>
+            <option value="Keratin Silk Infusion">Keratin Silk Infusion (₹4,499)</option>
+            <option value="Intense Moroccan Hair Spa">Intense Moroccan Hair Spa (₹1,499)</option>
+            <option value="Hydra Glow Radiance Ritual">Hydra Glow Radiance Ritual (₹2,199)</option>
+            <option value="Signature HD Bridal Couture">Signature HD Bridal Couture (₹9,999)</option>
+            <option value="Rose Petal Foot Reflexology Pedicure">Rose Petal Foot Reflexology Pedicure (₹999)</option>
+            <option value="The Signature Radiance Package">The Signature Radiance Package (₹3,499)</option>
+          </select>
+          <span class="form-error-msg">Please select a service.</span>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="mDate">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="mDate" class="form-control" required>
+            <span class="form-error-msg">Please select a date.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mTime">Preferred Time <span class="required">*</span></label>
+            <select id="mTime" class="form-control" required>
+              <option value="">-- Choose Time --</option>
+              <option value="10:00 AM - 12:00 PM">10:00 AM – 12:00 PM</option>
+              <option value="12:00 PM - 03:00 PM">12:00 PM – 03:00 PM</option>
+              <option value="03:00 PM - 06:00 PM">03:00 PM – 06:00 PM</option>
+              <option value="06:00 PM - 08:30 PM">06:00 PM – 08:30 PM</option>
+            </select>
+            <span class="form-error-msg">Please choose a time slot.</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+          Confirm Booking Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox Viewer -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <button class="lightbox-close-btn" onclick="closeLightbox()" aria-label="Close Lightbox">✕</button>
+    <button class="lightbox-btn prev" onclick="prevLightbox()" aria-label="Previous Image">‹</button>
+    <button class="lightbox-btn next" onclick="nextLightbox()" aria-label="Next Image">›</button>
+
+    <div class="lightbox-content-box">
+      <div class="lightbox-img-holder">
+        <img id="lightboxImage" src="" alt="Full view preview">
+      </div>
+      <div class="lightbox-meta">
+        <span id="lightboxCaption" style="font-family: var(--font-serif); font-size: 1.25rem;"></span>
+        <span id="lightboxCounter" style="font-size: 0.85rem; color: var(--color-secondary);"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Digital Product Template & Architecture Inspector Modal -->
+  <div class="modal-backdrop" id="templateExplorerModal">
+    <div class="modal-card" style="max-width: 820px;">
+      <button class="modal-close-btn" onclick="toggleTemplateInspector(false)" aria-label="Close Explorer">✕</button>
+      <span class="eyebrow">Commercial Digital Template Product</span>
+      <h2 style="font-size: 1.85rem; margin-bottom: 0.6rem;">Template Architecture & Export Files</h2>
+      <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">
+        This production template is organized into modular semantic files for immediate commercial deployment or
+        customer reselling:
+      </p>
+
+      <div
+        style="background: #1E1B1A; color: #EDE3D7; border-radius: var(--radius-md); padding: 1.4rem; font-family: monospace; font-size: 0.85rem; line-height: 1.7; overflow-x: auto; margin-bottom: 1.5rem;">
+        <span style="color: var(--color-secondary);">slv-wings-salon/</span><br>
+        ├──
+        index.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Premium Homepage</span><br>
+        ├──
+        about.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Brand Story, Philosophy & Stats</span><br>
+        ├── services.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Service Catalog & Dynamic Filter</span><br>
+        ├──
+        pricing.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Pricing Menus & Quick-Book</span><br>
+        ├──
+        team.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Certified Specialists Directory</span><br>
+        ├──
+        gallery.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Filterable Masonry & Lightbox</span><br>
+        ├── testimonials.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Reviews & Autoplay Slider</span><br>
+        ├──
+        contact.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Bengaluru Studio Location & Map</span><br>
+        ├──
+        booking.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Dedicated Online Booking Engine</span><br>
+        ├──
+        assets/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Curated Unsplash HD salon assets</span><br>
+        ├──
+        css/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Modular tokens (Rose Gold & Ivory)</span><br>
+        ├──
+        js/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Vanilla router, booking, gallery</span><br>
+        └──
+        README.md&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color:#9A918C;"># Complete buyer customization guide</span>
+      </div>
+
+      <div style="display: flex; gap: 0.8rem; justify-content: flex-end;">
+        <button class="btn btn-secondary btn-sm" onclick="copyConfigurationGuide()">Copy Brand Tokens CSS</button>
+        <button class="btn btn-primary btn-sm" onclick="toggleTemplateInspector(false)">Close Inspector</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Developer / Buyer Asset Inspector Button -->
+  <!-- <button class="template-inspector-btn" onclick="toggleTemplateInspector(true)" aria-label="Inspect Template Source">
+    <span>📂</span> Template Files & Tokens
+  </button> -->
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <aside class="mobile-sticky-bar" aria-label="Quick Mobile Actions">
+    <a href="tel:+919731121678" class="btn btn-secondary btn-sm" style="flex: 1; padding: 0.7rem 0.5rem;">
+      📞 Call Salon
+    </a>
+    <button class="btn btn-primary btn-sm" style="flex: 2; padding: 0.7rem 0.5rem;" onclick="openBookingModal()">
+      Book Appointment
+    </button>
+  </aside>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Philosophy -->
+        <div>
+          <div class="brand-logo" style="margin-bottom: 1.2rem; color: #FFFFFF;">
+            <div class="brand-crest"
+              style="background: #3B3331; color: var(--color-secondary); border-color: var(--color-primary);"
+              aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2C8 6 3 9 2 14c-1 5 3 7 7 5 3-1.5 3-5 3-5s0 3.5 3 5c4 2 8 0 7-5-1-5-6-8-10-12z" />
+              </svg>
+            </div>
+            <div class="brand-name">
+              <span class="brand-title" style="color: #FFFFFF;">SLV WINGS</span>
+              <span class="brand-tagline" style="color: var(--color-secondary);">Unisex Salon & Spa</span>
+            </div>
+          </div>
+          <p style="color: #BAAEA6; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            Enhance Your Natural Grace. A luxurious sanctuary dedicated to bespoke haircare, dermal therapies, and
+            bridal artistry in Bengaluru.
+          </p>
+          <div style="display: flex; gap: 0.8rem;">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+              style="color: var(--color-secondary); text-decoration: none;" aria-label="Instagram">Instagram</a>
+            <span style="color: #6B625E;">•</span>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              style="color: var(--color-secondary); text-decoration: none;" aria-label="Facebook">Facebook</a>
+            <span style="color: #6B625E;">•</span>
+            <a href="https://wa.me/919731121678" target="_blank" rel="noopener noreferrer"
+              style="color: var(--color-secondary); text-decoration: none;" aria-label="WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home" onclick="navigateTo('home'); return false;">Home Atelier</a></li>
+            <li><a href="#about" onclick="navigateTo('about'); return false;">About & Philosophy</a></li>
+            <li><a href="#services" onclick="navigateTo('services'); return false;">Service Catalogue</a></li>
+            <li><a href="#pricing" onclick="navigateTo('pricing'); return false;">Pricing & Packages</a></li>
+            <li><a href="#team" onclick="navigateTo('team'); return false;">Master Specialists</a></li>
+            <li><a href="#gallery" onclick="navigateTo('gallery'); return false;">Visual Gallery</a></li>
+            <li><a href="#contact" onclick="navigateTo('contact'); return false;">Studio Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Signature Rituals -->
+        <div>
+          <h4 class="footer-title">Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="#services" onclick="navigateTo('services'); filterServices('hair'); return false;">Couture
+                Balayage</a></li>
+            <li><a href="#services" onclick="navigateTo('services'); filterServices('treatment'); return false;">Keratin
+                Silk Infusion</a></li>
+            <li><a href="#services" onclick="navigateTo('services'); filterServices('skin'); return false;">Hydra Glow
+                Facials</a></li>
+            <li><a href="#services" onclick="navigateTo('services'); filterServices('bridal'); return false;">HD Bridal
+                Artistry</a></li>
+            <li><a href="#services" onclick="navigateTo('services'); filterServices('nails'); return false;">Rose
+                Reflexology Pedicure</a></li>
+            <li><a href="#services" onclick="navigateTo('services'); filterServices('hair'); return false;">Men's
+                Executive Cuts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Address & Contact Details -->
+        <div>
+          <h4 class="footer-title">Visit the Studio</h4>
+          <p style="color: #BAAEA6; font-size: 0.88rem; margin-bottom: 0.8rem; line-height: 1.5;">
+            58 & 18, 2nd Floor, Dodabullapura Main Road, Singanayakanahalli, Opp. Godrej Avenue, Yelahanka, Bengaluru,
+            Karnataka 560119
+          </p>
+          <p style="color: #BAAEA6; font-size: 0.88rem; margin-bottom: 0.4rem;">
+            <strong>Phone:</strong> <a href="tel:+919731121678"
+              style="color: var(--color-secondary); text-decoration: none;">+91 9731121678</a>
+          </p>
+          <p style="color: #BAAEA6; font-size: 0.88rem;">
+            <strong>Hours:</strong> Mon–Sat: 9:30 AM – 8:30 PM<br>Sun: 10:00 AM – 6:00 PM
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 SLV Wings Unisex Salon. All Rights Reserved. "Enhance Your Natural Grace" is a registered brand motto.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#home" style="color: #9E948E; text-decoration: none;">Privacy Policy</a>
+          <a href="#home" style="color: #9E948E; text-decoration: none;">Terms of Service</a>
+          <a href="#booking" onclick="navigateTo('booking'); return false;"
+            style="color: var(--color-secondary); text-decoration: none;">Reserve Now</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
